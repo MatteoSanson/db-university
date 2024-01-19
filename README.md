@@ -10,5 +10,5 @@ Modellizzare la struttura delle entità di un database per memorizzare tutti i d
 - per ogni appello d’Esame a cui lo Studente ha partecipato, è necessario memorizzare il voto ottenuto, anche se non sufficiente.
 <br>
 
-Pensare a quali entità (tabelle) creare per il database e cercare di stabilirne le relazioni.
+Pensare a quali entità (tabelle) creare per il database e cercare di stabilirne le relazioni.<br>
 Infine, andiamo a definire le colonne e i tipi di dato di ogni tabella.
