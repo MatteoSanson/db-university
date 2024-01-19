@@ -11,4 +11,7 @@ Modellizzare la struttura delle entità di un database per memorizzare tutti i d
 <br>
 
 Pensare a quali entità (tabelle) creare per il database e cercare di stabilirne le relazioni.<br>
-Infine, andiamo a definire le colonne e i tipi di dato di ogni tabella.
+Infine, andiamo a definire le colonne e i tipi di dato di ogni tabella.<br><br>
+
+## Modello DB
+![db-university](https://github.com/MatteoSanson/db-university/assets/128544980/6efb2f77-70db-455e-afee-f6b847b29d6c)
