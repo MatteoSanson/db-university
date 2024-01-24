@@ -113,12 +113,18 @@ ORDER BY `teacher_id`;
 
 
 SELECT
-    `students`.`id`,`students`.`name`,`students`.`surname`,`exam_student`.`exam_id`,`exam_student`.`vote`,`exams`.*
+    `students`.`id`,
+    `students`.`name`,
+    `students`.`surname`,
+    `courses`.`name`,
+    COUNT(`exam_student`.`vote`) AS `num_tentativi`,
+    MIN(`exam_student`.`vote`) AS `voto_minimo`
 FROM
     `students`
-INNER JOIN `exam_student`
-ON `students`.`id` = `exam_student`.`student_id`
-INNER JOIN `exams`
-ON `exam_student`.`exam_id` = `exams`.`id`
+INNER JOIN `exam_student` ON `students`.`id` = `exam_student`.`student_id`
+INNER JOIN `exams` ON `exam_student`.`exam_id` = `exams`.`id`
+INNER JOIN `courses` ON `exams`.`course_id` = `courses`.`id`
+GROUP BY `students`.`id`, `courses`.`id`
+HAVING `voto_minimo` > 18
 
 -------------------------------------------------------------
