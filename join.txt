@@ -4,7 +4,7 @@ SELECT `degrees`.`id`, `degrees`.`name`, `students`.*
 FROM `degrees`
 INNER JOIN `students`
 ON `degrees`.`id` = `students`.`degree_id` 
-WHERE `degrees`.`id` = 29;
+WHERE `degrees`.`id` = 53;
 
 -------------------------------------------------------------
 
